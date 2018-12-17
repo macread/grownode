@@ -16,7 +16,7 @@ const app = express(); //server
 
 app.use(bodyParser.json());
 
-app.get('/api/people/:id', controller.getPeople);
+app.get('/api/people/:sortBy?', controller.getPeople);
 app.get('/api/planets/', controller.getPlanets);
 
 //server
